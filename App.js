@@ -1,13 +1,14 @@
 import GlobalStyles from './src/components/GlobalStyles.js';
 import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
-import HomeScreen from './src/navigation/HomeScreen.js';
+import AppNavigation from './src/navigation/index';
 
 
 export default function App() {
   return (
-    <SafeAreaView style={GlobalStyles.AndroidSafeArea}>
-      <Text>App jsxs</Text>
-    </SafeAreaView>
+    <AppNavigation/>
   );
 }
+/*<SafeAreaView style={GlobalStyles.AndroidSafeArea}>
+  <Text>App jsxs</Text>
+</SafeAreaView>*/
